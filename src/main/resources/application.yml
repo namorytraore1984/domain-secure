@@ -1,0 +1,22 @@
+# spring.datasource
+spring:
+  datasource:
+    username: sa
+    password: sa
+    url: jdbc:h2:mem:mydb
+    driver-class-name: org.h2.Driver
+  # spring.jpa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  # spring.sql
+  # H2
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: never
